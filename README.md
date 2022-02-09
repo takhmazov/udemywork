@@ -1,5 +1,5 @@
 ## Meine Projekt der ich auf Udemy gelernt habe
 
-- Die Link auf dem fertigen Seite: 
+- Die Link auf dem fertigen Seite: [a link](https://takhmazov.github.io/udemywork/)
 
-[a link](https://https://takhmazov.github.io/udemywork/)
+
