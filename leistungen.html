@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="de">
-
   <head>
     <meta charset="utf-8">
-    <title>Leistungen</title>
     <meta name="viewport" content="wwidth=device-width, initial-scale=1.0">
+    <title>Leistungen</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
-
   <body>
-    <!-- === NAVIGATIOMSLISTE === -->
-    <!-- <nav class="header-nav">
-      <div class="container">
+    <nav id="header-nav">
+      <div class="container" id="desktop-nav">
+        <div class="row">
+          <div class="col-6">
+            <a href="index.html">
+              <img src="img/webdesign-logo.png" class="logo" alt="Das Logo von WEBDESIGN made simple">
+            </a>
+            <ul>
+              <li><a href="index.html">Startseite</a></li>
+              <li class="active"><a href="leistungen.html">Leistungen</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="mobile-nav">
        <div class="row">
          <div class="col-6">
-           <a href="index.html">
-             <img src="img/webdesign-logo.png" class="logo" alt="Das Logo von WEBDESIGN made simple">
-           </a>
-           <ul>
-             <li><a href="index.html">Startseite</a></li>
-             <li class="active"><a href="leistungen.html">Leistungen</a></li>
-             <li><a href="kontakt.html">Kontakt</a></li>
-             <li><a href="impressum.html">Impressum</a></li>
-           </ul>
-         </div>
+            <a href="index.html">
+              <img src="img/webdesign-logo.png" class="logo" alt="Das Logo von WEBDESIGN made simple">
+            </a>
+            <div class="clearfix" id="mobile-nav-dropdown">
+              <div id="mobile-nav-button">
+                <span>&equiv;</span>
+              </div>
+              <div class="clearfix" id="mobile-nav-content">
+                  <ul>
+                    <li class=""><a href="index.html">Startseite</a></li>
+                    <li class="active"><a href="leistungen.html">Leistungen</a></li>
+                    <li class=""><a href="kontakt.html">Kontakt</a></li>
+                    <li class=""><a href="impressum.html">Impressum</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
        </div>
      </div>
-   </nav> -->
-
-   <nav class="header-nav">
-    <div class="container">
-     <div class="row">
-       <div class="col-6">
-         <a href="index.html">
-           <img src="img/webdesign-logo.png" class="logo" alt="Das Logo von WEBDESIGN made simple"></a>
-       </div>
-     </div>
-   </div>
- </nav>
-
-    <header class="header-banner-klein"></header> 
+   </nav>
+    <header id="header-banner-klein"></header>
   </body>
 </html>
