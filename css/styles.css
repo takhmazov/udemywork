@@ -20,6 +20,37 @@ body {
   box-sizing: border-box;
 }
 
+:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px #e5e5e5,0 0 10px #e5e5e5;
+}
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 1366px) {
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  section {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+   }
+  }
+
+  @media (max-width: 768px) {
+    section {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+     }
+    }
+
 /* === GENERELES  === */
 
 .clearfix::after {
@@ -45,6 +76,73 @@ body {
   border: 2px solid #A62C21;
   color: #fff;
   padding: .4rem .6rem;
+}
+
+.btn-typ-1:hover {
+  background-color: #A62C21;
+  border: 2px solid #fff;
+}
+
+.btn-type-2 {
+  text-decoration: none;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: .4rem .6rem;
+}
+
+.btn-type-2:hover {
+  color: #A62C21;
+  border: 2px solid #A62C21;
+}
+
+.intro-container {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1366px) {
+  .intro-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-container {
+    margin-bottom: 0;
+  }
+}
+
+.intro-container > h1 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.intro-container > p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1366px) {
+  .intro-container > p {
+    margin-bottom: .5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro-container > p {
+    margin-bottom: 0;
+  }
 }
 
 /* 
@@ -111,6 +209,10 @@ body {
 #header-nav .col-6 {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.logo-link {
+  display: inline-block;
 }
 
 /* == NAVIGATIONSLEISTE (MOBIL) === */
@@ -195,6 +297,8 @@ body {
 #newsletter-bereich {
   width: 100%;
   background-color: #3d3f45;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #nb-werbetext {
@@ -260,8 +364,92 @@ body {
     padding: .1rem;
   }
 }
-/* === GRID-SYSTEMS Responsiv mit Sicht ===
 
+/* === LEISTUNGEN-BEREICH === */
+
+.leistungs-box {
+  background-color: #3d3f45;
+  text-align: center;
+  color: #fff;
+  padding: 1rem 3rem 2.5rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.6rem;
+}
+
+#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+  margin-left: 1rem;
+}
+
+#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+  margin-right: 1rem;
+}
+
+.leistungs-box > h2 {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.leistung-ansehen-btn {
+  color: #fff;
+  height: 40px;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: .5rem;
+  width: 40%;
+  margin-top: 1rem;
+  min-width: 100px;
+}
+
+.leistung-ansehen-btn:link {
+  color: #fff;
+}
+
+.leistung-ansehen-btn:visited {
+  color: #fff;
+}
+
+.leistung-ansehen-btn:active {
+  color: #fff;
+}
+
+.leistung-ansehen-btn:hover {
+  color: #A62C21;
+  border: 2px solid #A62C21;
+}
+
+@media (max-width: 1366px) {
+  .leistungs-box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .leistungs-box {
+    width: 100%;
+    margin-bottom: .6rem;
+  }
+  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+    margin-left: .5rem;
+  }
+  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+    margin-right: .5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+    margin-left: 0;
+  }
+  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+    margin-right: 0;
+  }
+}
+
+
+/* === GRID-SYSTEMS Responsiv mit Sicht === */
+/* 
   .border, .border * {
     border: 1px solid #91C4FF;
   }
@@ -276,7 +464,7 @@ body {
     margin: 0;
     color: #fff;
     text-align: center;
-  } */
+  }  */
 
 
 /* === GRID-SYSTEMS === */
