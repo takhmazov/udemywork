@@ -525,11 +525,11 @@ section {
 }
 
 #schnell-icon {
-  background: #3d3f45 url("/img/services-sprite.png") 120px 0;
+  background: #3d3f45 url("./../img/services-sprite.png") 120px 0;
 }
 
 #modernes-icon {
-  background: #3d3f45 url("/img/services-sprite.png") 240px 0;
+  background: #3d3f45 url("./../img/services-sprite.png") 240px 0;
 }
 
 #service-bereich > .container > .row:nth-of-type(2) > .col-2 > .service-box {
