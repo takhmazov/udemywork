@@ -22,7 +22,7 @@ body {
 
 :focus {
   outline: none;
-  box-shadow: 0 0 2px 2px #e5e5e5,0 0 10px #e5e5e5;
+  box-shadow: 0 0 2px 2px #F0F0F0,0 0 10px #F0F0F0;
 }
 
 section {
@@ -193,10 +193,10 @@ section {
 }
 
 #header-nav ul li a:hover {
- color: #E5E5E5;
+ color: #F0F0F0;
 }
 #header-nav ul li a:active {
-  color: #E5E5E5;
+  color: #F0F0F0;
 }
 #header-nav ul li a:visited {
   color: #fff;
@@ -447,6 +447,162 @@ section {
   }
 }
 
+/* === VIDEO-BEREICH === */
+
+#video-bereich {
+  background-color: #3d3f45;
+  color: #fff;
+}
+
+#video-bereich video {
+  display: block;
+  width: 35%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1440px) {
+  #video-bereich video {
+    width: 45%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #video-bereich video {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  #video-bereich video {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  #video-bereich video {
+    width: 100%;
+  }
+}
+
+/* === SERVICE-BEREICH === */
+
+#service-bereich {
+  background-color: #F0F0F0;
+}
+
+.service-box {
+  text-align: center;
+  width: 80%;
+}
+
+.service-box h1 {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+#service-bereich .row:nth-of-type(2) > .col-2:first-of-type .service-box {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+#service-bereich .row:nth-of-type(2) > .col-2:nth-of-type(2) .service-box {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#günstig-icon {
+  background: #3d3f45 url("./../img/services-sprite.png");
+}
+
+#schnell-icon {
+  background: #3d3f45 url("/img/services-sprite.png") 120px 0;
+}
+
+#modernes-icon {
+  background: #3d3f45 url("/img/services-sprite.png") 240px 0;
+}
+
+#service-bereich > .container > .row:nth-of-type(2) > .col-2 > .service-box {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 480px) {
+  .service-box {
+    width: 100%;
+  }
+}
+
+/* === ÜBER-UNS-BERECH === */
+
+#über-uns-bereich {
+  background-color: #fff;
+}
+
+#über-uns-content {
+  position: relative;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#über-uns-content img {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  height: 100%;
+  width: auto;
+}
+
+#über-uns-content > p {
+width: 75%;
+font-size: 1.25rem;
+}
+
+@media (max-width: 1680px) {
+  #über-uns-content img {
+    right: 50px;
+  }
+}
+
+@media (max-width: 1560px) {
+  #über-uns-content img {
+    right: 0;
+  }
+}
+
+@media (max-width: 1440px) {
+  #über-uns-content > p {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1240px) {
+  #über-uns-content > p {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1167px) {
+  #über-uns-content img {
+    display: none;
+  }
+  #über-uns-content > p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* === GRID-SYSTEMS Responsiv mit Sicht === */
 /* 
