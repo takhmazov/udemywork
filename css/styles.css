@@ -367,7 +367,7 @@ section {
 
 /* === LEISTUNGEN-BEREICH === */
 
-.leistungs-box {
+.leistungs-teaser-box {
   background-color: #3d3f45;
   text-align: center;
   color: #fff;
@@ -378,15 +378,15 @@ section {
   margin-bottom: 1.6rem;
 }
 
-#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
   margin-left: 1rem;
 }
 
-#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
   margin-right: 1rem;
 }
 
-.leistungs-box > h2 {
+.leistungs-teaser-box > h2 {
   font-size: 1.4rem;
   font-weight: normal;
 }
@@ -420,29 +420,29 @@ section {
 }
 
 @media (max-width: 1366px) {
-  .leistungs-box {
+  .leistungs-teaser-box {
     width: 80%;
   }
 }
 
 @media (max-width: 1024px) {
-  .leistungs-box {
+  .leistungs-teaser-box {
     width: 100%;
     margin-bottom: .6rem;
   }
-  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
     margin-left: .5rem;
   }
-  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
     margin-right: .5rem;
   }
 }
 
 @media (max-width: 768px) {
-  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
     margin-left: 0;
   }
-  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
     margin-right: 0;
   }
 }
@@ -603,6 +603,225 @@ font-size: 1.25rem;
     margin-right: auto;
   }
 }
+
+
+
+/* === FOOTER === */
+
+#footer {
+  background-color: #3D3F45;
+  height: 2.8rem;
+  color: #FFF;
+}
+
+#footer-nav {
+  display: inline-block;
+  float: right;
+}
+
+#footer-nav a {
+  text-decoration: none;
+}
+
+#footer-nav a:link {
+  color: #FFF;
+}
+
+#footer-nav a:visited {
+  color: #FFF;
+}
+
+#footer-nav a:active {
+  color: #FFF;
+}
+
+#footer-nav a:hover {
+  color: #F0F0F0;
+}
+
+@media (max-width: 565px) {
+
+  #footer span {
+    display: none;
+  }
+}
+
+
+/* === LEISTUNGEN-SEITE === */
+
+.leistung {
+  padding-top: 2rem;
+  padding-bottom: 4em;
+}
+
+.leistung:nth-of-type(even) {
+  background-color: #f0f0f0;
+}
+
+.flex-container {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 1366px) {
+  .flex-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flex-container {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+.flex-container > .intro-container {
+  width: 100%;
+}
+
+.leistungs-box {
+  background-color: #3d3f45;
+  flex-basis: 25%;
+  color: #fff;
+  padding: 2rem 4rem;
+  text-align: center;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leistungs-box-empfohlen {
+  flex-basis: 30%;
+  min-height: 700px;
+  box-shadow: 0 0 20px 0 #3d3f45;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 2157px) {
+  .leistungs-box {
+    flex-basis: 27.5%;
+  }
+  
+  .leistungs-box-empfohlen {
+    flex-basis: 30%;
+  }
+}
+
+@media (max-width: 1962px) {
+  .leistungs-box {
+    flex-basis: 30%;
+  }
+  .leistungs-box-empfohlen {
+    flex-basis: 32.5%;
+  }
+}
+
+@media (max-width: 1797px) {
+  .leistungs-box {
+    flex-basis: 31%;
+  }
+  .leistungs-box-empfohlen {
+    flex-basis: 33%;
+  }
+}
+
+@media (max-width: 1743px) {
+  .leistungs-box {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 1425px) {
+  .flex-container {
+    align-items: stretch;
+  }
+  .leistungs-box-empfohlen {
+    min-height: initial;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flex-container {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  .leistungs-box {
+    padding: 2rem 4rem;
+    margin-bottom: 2rem;
+    min-height: initial;
+  }
+}
+
+@media (max-width: 592px) {
+  .flex-container {
+    padding: 0;
+  }
+  .leistungs-box {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 352px) {
+  .leistungs-box {
+    padding: .5rem 1rem 1.5rem;
+  }
+}
+
+.leistungs-box h1 {
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.leistungs-box ul {
+  padding: 0;
+
+}
+
+.leistungs-box ul li {
+  list-style-position: inside;
+  margin-bottom: .5rem;
+}
+
+.leistung-auswählen-btn {
+  width: 50%;
+  height: 2.5rem;
+  min-width: 170px;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: .4rem .6rem;
+}
+
+.leistung-auswählen-btn:hover {
+  font-weight: normal;
+  color: #A62C21;
+  border: 2px solid #A62C21;
+}
+
+
+
+
+
 
 /* === GRID-SYSTEMS Responsiv mit Sicht === */
 /* 
