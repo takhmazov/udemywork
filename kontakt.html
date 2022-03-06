@@ -5,6 +5,15 @@
     <meta name="viewport" content="wwidth=device-width, initial-scale=1.0">
     <title>Kontakt</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f0f0f0">
+    <meta name="msapplication-config" content="./img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <nav id="header-nav">
@@ -47,6 +56,54 @@
      </div>
    </nav>
     <header id="header-banner-klein"></header>
+
+    <!-- KONTAKTE-BEREICH -->
+
+    <section id="kontakt-bereich">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <header class="intro-container">
+              <h1>Kontakt</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga animi nobis impedit incidunt suscipit eius fugit fugiat voluptate soluta, repellendus enim voluptatem quo dolore nemo rerum molestias at in laboriosam.
+              </p>
+            </header>
+          </div>
+        </div>
+      </div>
+      <form id="kontakt-formular" action="kontakt.html" method="post">
+        <div class="row">
+          <div class="col-3">
+            <label for="vorname" class="screenreader">Vorname:</label>
+            <input id="vorname" type="text" name="vorname" placeholder="Vorname">
+          </div>
+          <div class="col-3">
+            <label for="nachname" class="screenreader">Nachname:</label>
+            <input id="nachname" type="text" name="nachname" placeholder="Nachname">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <label for="email" class="screenreader">E-Mail:</label>
+            <input id="email" type="text" name="email" placeholder="E-Mail" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" title="Gib ene gültige E-Mail Adresse">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <label for="nachricht" class="screenreader">Nachricht:</label>
+            <textarea name="nachricht" id="nachricht" placeholder="Nachricht"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <button id="absendeButton" class="btn-type-3" type="submit" name="absendeButton">Senden</button>
+          </div>
+        </div>
+      </form>
+
+    </section>
 
     <!-- FOOTER-->
 
